@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD4884E21F315ADC4D67834D /* Pods_RSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812FDD42C7A29AFBAE2F841C /* Pods_RSSwift.framework */; };
 		F346148D19FF2F6300DB2CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346148C19FF2F6300DB2CE3 /* AppDelegate.swift */; };
 		F346149019FF2F6300DB2CE3 /* RSSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F346148E19FF2F6300DB2CE3 /* RSSwift.xcdatamodeld */; };
 		F346149519FF2F6300DB2CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F346149319FF2F6300DB2CE3 /* Main.storyboard */; };
@@ -31,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F015322B458934B4E58544D /* Pods-RSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSwift/Pods-RSSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		812FDD42C7A29AFBAE2F841C /* Pods_RSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF0309685D6DD2AC32F9001 /* Pods-RSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSwift/Pods-RSSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F346148719FF2F6300DB2CE3 /* RSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F346148B19FF2F6300DB2CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F346148C19FF2F6300DB2CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4884E21F315ADC4D67834D /* Pods_RSSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67D1803DF6E16DD53661B8FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F015322B458934B4E58544D /* Pods-RSSwift.debug.xcconfig */,
+				9BF0309685D6DD2AC32F9001 /* Pods-RSSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71FB013FF61029C85928291B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				812FDD42C7A29AFBAE2F841C /* Pods_RSSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F346147E19FF2F6200DB2CE3 = {
 			isa = PBXGroup;
 			children = (
 				F346148919FF2F6300DB2CE3 /* RSSwift */,
 				F34614A219FF2F6400DB2CE3 /* RSSwiftTests */,
 				F346148819FF2F6300DB2CE3 /* Products */,
+				67D1803DF6E16DD53661B8FA /* Pods */,
+				71FB013FF61029C85928291B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34614A919FF2F6400DB2CE3 /* Build configuration list for PBXNativeTarget "RSSwift" */;
 			buildPhases = (
+				D54BEAB6D61FFDAB755ACE49 /* [CP] Check Pods Manifest.lock */,
 				F346148319FF2F6300DB2CE3 /* Sources */,
 				F346148419FF2F6300DB2CE3 /* Frameworks */,
 				F346148519FF2F6300DB2CE3 /* Resources */,
+				5628DE13CF5F9EA00C17C9CD /* [CP] Embed Pods Frameworks */,
+				628FC261AC5A7C6F570A34EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +251,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5628DE13CF5F9EA00C17C9CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSwift/Pods-RSSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		628FC261AC5A7C6F570A34EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSwift/Pods-RSSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54BEAB6D61FFDAB755ACE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F346148319FF2F6300DB2CE3 /* Sources */ = {
@@ -367,6 +442,7 @@
 		};
 		F34614AA19FF2F6400DB2CE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F015322B458934B4E58544D /* Pods-RSSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RSSwift/Info.plist;
@@ -380,6 +456,7 @@
 		};
 		F34614AB19FF2F6400DB2CE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF0309685D6DD2AC32F9001 /* Pods-RSSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RSSwift/Info.plist;
